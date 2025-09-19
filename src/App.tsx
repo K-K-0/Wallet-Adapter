@@ -3,6 +3,8 @@ import HomePage from "./components/Home";
 import  Airdrop  from './components/Airdrop';
 import Balance  from "./components/checkBalance";
 import TransferToken from "./components/sendToken";
+import Sign from "./components/signMessage";
+
 
 function App() {
   return (
@@ -12,6 +14,7 @@ function App() {
         <Route path="/airdrop" element={<Airdrop />} />
         <Route path="/checkBalance" element={<Balance/>} />
         <Route path="/send" element={<TransferToken />} />
+        <Route path="/sign" element={<Sign/>} />
 
       </Routes>
     </Router>

@@ -2,9 +2,9 @@ import { ConnectionProvider, WalletProvider } from "@solana/wallet-adapter-react
 import { WalletModalProvider, WalletMultiButton } from "@solana/wallet-adapter-react-ui";
 import { clusterApiUrl } from "@solana/web3.js"
 import "@solana/wallet-adapter-react-ui/styles.css"
-import { SendToken } from "../functions/SendToken";
+import { SignMessage } from "../functions/SignMessage";
 
-function TransferToken() {
+function Sign() {
     return (
         <ConnectionProvider endpoint={clusterApiUrl("devnet")}>
             <WalletProvider wallets={[]} autoConnect>
@@ -37,7 +37,9 @@ function TransferToken() {
                         </div>
 
                         {/* MAIN CONTENT */}
-                        <div className="relative z-10 flex flex-col items-center justify-center text-white px-4 py-8 max-w-4xl w-full">                            
+                        <div className="relative z-10 flex flex-col items-center justify-center text-white px-4 py-8 max-w-4xl w-full">
+                            {/* Heading */}
+                            
 
                             {/* Wallet Button */}
                             <div className="relative group mb-12">
@@ -62,7 +64,7 @@ function TransferToken() {
 
                             {/* Airdrop Button */}
                             <div className="w-full flex justify-center">
-                                <SendToken/>
+                                <SignMessage/>
                             </div>
 
                             {/* Footer Badges */}
@@ -107,4 +109,4 @@ function TransferToken() {
     );
 }
 
-export default TransferToken;
+export default Sign;

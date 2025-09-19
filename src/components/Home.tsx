@@ -25,7 +25,9 @@ function HomePage() {
             color: 'from-emerald-600 to-teal-600',
             bgColor: 'from-emerald-900/50 to-teal-900/50',
             borderColor: 'border-emerald-500/30',
-            glowColor: 'shadow-emerald-900/50'
+            glowColor: 'shadow-emerald-900/50',
+            onclick: () => navigate('/send')
+
         },
         {
             id: 'balance',
@@ -35,7 +37,9 @@ function HomePage() {
             color: 'from-amber-600 to-orange-600',
             bgColor: 'from-amber-900/50 to-orange-900/50',
             borderColor: 'border-amber-500/30',
-            glowColor: 'shadow-amber-900/50'
+            glowColor: 'shadow-amber-900/50',
+            onclick: () => navigate('/checkBalance')
+
         },
         {
             id: 'sign',
@@ -45,7 +49,8 @@ function HomePage() {
             color: 'from-cyan-600 to-blue-600',
             bgColor: 'from-cyan-900/50 to-blue-900/50',
             borderColor: 'border-cyan-500/30',
-            glowColor: 'shadow-cyan-900/50'
+            glowColor: 'shadow-cyan-900/50',
+            onclick: () => navigate('/sign')
         }
     ];
 

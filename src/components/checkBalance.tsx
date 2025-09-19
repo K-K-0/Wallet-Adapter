@@ -39,26 +39,7 @@ function Balance() {
                         {/* MAIN CONTENT */}
                         <div className="relative z-10 flex flex-col items-center justify-center text-white px-4 py-8 max-w-4xl w-full">
                             {/* Heading */}
-                            <div className="text-center mb-12">
-                                <div className="relative">
-                                    <div className="absolute inset-0 blur-2xl">
-                                        <h1 className="text-6xl md:text-7xl font-black bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent">
-                                            Solana Airdrop
-                                        </h1>
-                                    </div>
-                                    <h1 className="relative text-6xl md:text-7xl font-black bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent mb-6 tracking-tight">
-                                        Solana Airdrop
-                                    </h1>
-                                </div>
-
-                                <p className="text-gray-300 text-xl md:text-2xl mb-4 font-light leading-relaxed">
-                                    Connect your wallet and claim free test SOL
-                                </p>
-                                <p className="text-gray-400 text-lg max-w-2xl mx-auto leading-relaxed">
-                                    Build and test your decentralized applications on Solana's lightning-fast devnet
-                                </p>
-                            </div>
-
+                            
                             {/* Wallet Button */}
                             <div className="relative group mb-12">
                                 <div className="absolute -inset-1 bg-gradient-to-r from-emerald-600 via-green-600 to-teal-600 rounded-2xl blur opacity-30 group-hover:opacity-60 transition duration-300"></div>
