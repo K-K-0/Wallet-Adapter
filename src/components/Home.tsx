@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 function HomePage() {
-    const [activeFeature, setActiveFeature] = useState(null);
+    const [activeFeature, setActiveFeature] = useState("");
     const navigate = useNavigate()
 
     const features = [
@@ -149,7 +149,7 @@ function HomePage() {
                                     key={feature.id}
                                     className="relative group cursor-pointer"
                                     onMouseEnter={() => setActiveFeature(feature.id)}
-                                    onMouseLeave={() => setActiveFeature(null)}
+                                    onMouseLeave={() => setActiveFeature("")}
                                     style={{ animationDelay: `${index * 200}ms` }}
                                     onClick={feature.onclick}
                                 >
@@ -241,12 +241,7 @@ function HomePage() {
             <div className="absolute bottom-1/4 left-1/3 w-1 h-1 bg-cyan-400 rounded-full animate-ping delay-500 opacity-60"></div>
             <div className="absolute bottom-1/3 right-1/3 w-1 h-1 bg-pink-400 rounded-full animate-ping delay-1500 opacity-60"></div>
 
-            <style jsx>{`
-        @keyframes grid-move {
-          0% { transform: translate(0, 0); }
-          100% { transform: translate(50px, 50px); }
-        }
-      `}</style>
+          
         </div>
     );
 }

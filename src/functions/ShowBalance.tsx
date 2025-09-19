@@ -160,18 +160,7 @@ export function CheckBalance() {
         </div>
       </div>
 
-      <style jsx>{`
-            @keyframes bounce-dots {
-                0%, 80%, 100% {
-                    transform: scale(0);
-                    opacity: 0.5;
-                }
-                40% {
-                    transform: scale(1);
-                    opacity: 1;
-                }
-            }
-        `}</style>
+     
     </div>
   )
 }

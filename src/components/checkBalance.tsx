@@ -90,17 +90,6 @@ function Balance() {
                         <div className="absolute top-1/3 right-20 w-1 h-1 bg-purple-400 rounded-full animate-ping delay-1000 opacity-60"></div>
                         <div className="absolute bottom-1/4 left-1/3 w-1 h-1 bg-cyan-400 rounded-full animate-ping delay-500 opacity-60"></div>
                         <div className="absolute bottom-1/3 right-1/3 w-1 h-1 bg-pink-400 rounded-full animate-ping delay-1500 opacity-60"></div>
-
-                        <style jsx>{`
-              @keyframes grid-move {
-                0% {
-                  transform: translate(0, 0);
-                }
-                100% {
-                  transform: translate(50px, 50px);
-                }
-              }
-            `}</style>
                     </div>
                 </WalletModalProvider>
             </WalletProvider>

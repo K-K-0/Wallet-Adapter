@@ -29,8 +29,8 @@ export function RequestAirdrop() {
             await connection.confirmTransaction(sig, "confirmed");
             setStatus(`✅ Airdropped ${amount} SOL to ${wallet.publicKey.toBase58()}`);
             setAmount("");
-        } catch (err) {
-            setStatus(`❌ Error: ${err.message}`);
+        } catch (error: any) {
+            setStatus(`❌ Error: ${error.message}`);
         } finally {
             setIsLoading(false);
         }

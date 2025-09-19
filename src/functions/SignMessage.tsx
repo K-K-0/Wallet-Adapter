@@ -68,7 +68,7 @@ export function SignMessage() {
                 <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 via-pink-600 to-cyan-600 rounded-2xl blur opacity-20 group-hover:opacity-40 group-focus-within:opacity-40 transition duration-500"></div>
 
                 <div className="relative bg-black/40 backdrop-blur-xl rounded-2xl border border-white/10 p-8">
-                    <h3 className="text-2xl font-bold text-white mb-6 text-center bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">
+                    <h3 className="text-2xl font-bold texthite mb-6 text-center bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">
                         Sign Your Message
                     </h3>
 
@@ -82,7 +82,7 @@ export function SignMessage() {
                                 value={message}
                                 onChange={(e) => setMessage(e.target.value)}
                                 placeholder="Type your message here..."
-                                rows="4"
+                                rows={4}
                                 className="
                                     w-full px-6 py-4 
                                     bg-black/30 backdrop-blur-sm 
@@ -196,21 +196,7 @@ export function SignMessage() {
                 </div>
             </div>
 
-            <style jsx>{`
-                @keyframes fade-in {
-                    from {
-                        opacity: 0;
-                        transform: translateY(10px);
-                    }
-                    to {
-                        opacity: 1;
-                        transform: translateY(0);
-                    }
-                }
-                .animate-fade-in {
-                    animation: fade-in 0.3s ease-out;
-                }
-            `}</style>
+           
         </div>
     );
 }
