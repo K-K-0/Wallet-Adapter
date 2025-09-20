@@ -87,7 +87,7 @@ function HomePage() {
                 <div className="flex flex-col items-center justify-center pt-20 pb-16 px-4">
 
                     {/* Main heading with glow effect */}
-                    <div className="text-center mb-16 max-w-6xl">
+                    <div className="text-center max-w-2xl">
                         <div className="relative mb-8">
                             <div className="absolute inset-0 blur-2xl opacity-50">
                                 <h1 className="text-7xl md:text-8xl font-black bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent">
@@ -102,29 +102,6 @@ function HomePage() {
                         <p className="text-2xl md:text-3xl text-gray-300 mb-6 font-light leading-relaxed">
                             Your complete wallet management solution
                         </p>
-                        <p className="text-lg text-gray-400 max-w-3xl mx-auto leading-relaxed">
-                            Experience the power of Solana blockchain with our comprehensive suite of wallet tools.
-                            From airdrops to transactions, everything you need in one beautiful interface.
-                        </p>
-
-                        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-12 mb-8">
-                            <div className="text-center">
-                                <div className="text-3xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">⚡</div>
-                                <div className="text-sm text-gray-400 mt-2">Lightning Fast</div>
-                            </div>
-                            <div className="text-center">
-                                <div className="text-3xl font-bold bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent">🔒</div>
-                                <div className="text-sm text-gray-400 mt-2">Secure</div>
-                            </div>
-                            <div className="text-center">
-                                <div className="text-3xl font-bold bg-gradient-to-r from-amber-400 to-orange-400 bg-clip-text text-transparent">🎯</div>
-                                <div className="text-sm text-gray-400 mt-2">User Friendly</div>
-                            </div>
-                            <div className="text-center">
-                                <div className="text-3xl font-bold bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">🆓</div>
-                                <div className="text-sm text-gray-400 mt-2">Free to Use</div>
-                            </div>
-                        </div>
                     </div>
                 </div>
 
