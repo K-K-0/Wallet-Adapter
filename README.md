@@ -176,3 +176,5 @@ MIT License - feel free to use this code for your own projects.
 ---
 
 Built for developers who need straightforward Solana wallet tools without unnecessary complexity.
+
+Built with ❤️ for the Solana ecosystem
